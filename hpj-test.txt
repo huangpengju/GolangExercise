@@ -8,3 +8,7 @@
 请注意
 
 https和SSH
+hhtps
+$ git remote -v
+origin  https://github.com/huangpengju/GolangExercise.git (fetch)
+origin  https://github.com/huangpengju/GolangExercise.git (push)

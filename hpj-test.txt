@@ -1,1 +1,14 @@
+
 公司写的
+
+公司第二次写的
+
+在家写的
+
+请注意
+
+https和SSH
+hhtps
+$ git remote -v
+origin  https://github.com/huangpengju/GolangExercise.git (fetch)
+origin  https://github.com/huangpengju/GolangExercise.git (push)

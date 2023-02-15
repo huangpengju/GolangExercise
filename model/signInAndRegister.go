@@ -1,7 +1,7 @@
 package model
 
 import (
-	utils "GolangExercise/utils/SignInAndRegister"
+	utils "GolangExercise/utils/signInAndRegister"
 	"fmt"
 )
 

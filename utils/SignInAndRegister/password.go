@@ -2,7 +2,7 @@ package utils
 
 import "golang.org/x/crypto/bcrypt"
 
-// EncryptPassword 将密码加密，需要传入密码返回的是加密后的密码
+// 1.EncryptPassword 将密码加密，需要传入密码返回的是加密后的
 func EncryptPassword(password string) (string, error) {
 	// 加密密码，使用 bcrypt 包当中的 GenerateFromPassword 方法，bcrypt.DefaultCost 代表使用默认加密成本
 	encryptPassword, err := bcrypt.GenerateFromPassword([]byte(password), bcrypt.DefaultCost)
@@ -15,7 +15,7 @@ func EncryptPassword(password string) (string, error) {
 	}
 }
 
-// EqualsPassword 对比密码是否正确
+// 2.EqualsPassword 对比密码是否
 func EqualsPassword(password, encryptPassword string) bool {
 	// 使用 bcrypt 当中的 CompareHashAndPassword 对比密码是否正确，第一个参数为加密后的密码，第二个参数为未加密的密码
 	err := bcrypt.CompareHashAndPassword([]byte(encryptPassword), []byte(password))
